@@ -35,8 +35,17 @@ public class Calculator {
 			
 			
 			
-			for (int i = 9; i >= 0; i--) {
+			for (int i = 7; i <= 9; i ++) {
 				buttons [i] = new JButton (String.valueOf(i));
+			}
+			for (int b = 4; b <= 6; b ++) {
+				buttons [b] = new JButton (String.valueOf(b));
+			}
+			for (int c = 1; c <= 3; c ++) {
+				buttons [c] = new JButton (String.valueOf(c));
+			}
+			for (int d = 0; d <= 0; d ++) {
+				buttons [d] = new JButton (String.valueOf(d));
 			}
 			
 			buttonPoint = new JButton (".");
@@ -50,10 +59,19 @@ public class Calculator {
 			GridLayout gl = new GridLayout (4,3);
 			p1.setLayout(gl);
 			
-			for (int i = 9; i >= 0; i--) {
+			for (int i = 7; i <= 9; i ++) {
 				p1.add(buttons[i]);
 			}
-			
+			for (int b = 4; b <= 6; b ++) {
+				p1.add(buttons[b]);
+			}
+			for (int c = 1; c <= 3; c ++) {
+				p1.add(buttons[c]);
+			}
+			for (int d = 0; d <= 0; d ++) {
+				p1.add(buttons[d]);
+			}
+		
 			p1.add(buttonPoint);
 			p1.add(buttonEqual);
 			
